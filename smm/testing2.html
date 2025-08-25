@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Table</title>
+  <style>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #6FA8DC 0%, #9FC5E8 100%);
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pricing-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 1100px;
+            width: 100%;
+            display: flex;
+        }
+
+        .column {
+            flex: 1;
+            border-right: 1px solid #e5e7eb;
+            min-height: 800px;
+        }
+
+        .column:last-child {
+            border-right: none;
+        }
+
+        /* Plan Finder Column */
+        .plan-finder {
+            background: #f8f9fb;
+            padding: 40px 30px;
+        }
+
+        .plan-finder h2 {
+            font-size: 26px;
+            font-weight: 600;
+            color: #1a1a1a;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .plan-finder p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+
+        .find-plan-btn {
+            background: transparent;
+            border: none;
+            color: #20c997;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .find-plan-btn::after {
+            content: "⚪";
+            font-size: 16px;
+        }
+
+        /* Plan Columns */
+        .plan-column {
+            background: white;
+            padding: 40px 30px;
+        }
+
+        .plan-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .plan-name {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .launchpad .plan-name {
+            color: #4A90E2;
+        }
+
+        .competitors-edge .plan-name {
+            color: #20C997;
+        }
+
+        .conversion-catalyst .plan-name {
+            color: #FF8C42;
+        }
+
+        .plan-price {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+        }
+
+        .connect-btn {
+            background: #90C695;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+            width: 140px;
+            margin: 0 auto;
+        }
+
+        .connect-btn:hover {
+            background: #7AB87F;
+        }
+
+        .connect-btn::after {
+            content: "→";
+            font-size: 16px;
+        }
+
+        /* Feature Lists */
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-item {
+            padding: 12px 0;
+            border-bottom: 1px solid #f1f3f4;
+            font-size: 14px;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .feature-item:last-child {
+            border-bottom: none;
+        }
+
+        .feature-item.label {
+            font-weight: 600;
+            color: #4a4a4a;
+            background: #f8f9fb;
+            margin: 0 -30px;
+            padding: 12px 30px;
+        }
+
+        .feature-item.dash {
+            text-align: center;
+            font-size: 20px;
+            color: #ccc;
+        }
+
+        @media (max-width: 968px) {
+            .pricing-container {
+                flex-direction: column;
+                max-width: 600px;
+            }
+            
+            .column {
+                border-right: none;
+                border-bottom: 1px solid #e5e7eb;
+                min-height: auto;
+            }
+            
+            .column:last-child {
+                border-bottom: none;
+            }
+            
+            .plan-finder {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <!-- Plan Finder Column -->
+        <div class="column plan-finder">
+            <h2>Not Sure Which Plan Suits You?</h2>
+            <p>We've got a breakdown to help you choose confidently.</p>
+            <button class="find-plan-btn">Find My Plan</button>
+            
+            <ul class="feature-list">
+                <li class="feature-item label">Platforms Managed</li>
+                <li class="feature-item label">Content Creation</li>
+                <li class="feature-item label">Video Content</li>
+                <li class="feature-item label">Campaign Strategy</li>
+                <li class="feature-item label">Hashtag Strategy</li>
+                <li class="feature-item label">Community Management</li>
+                <li class="feature-item label">Paid Ads Management</li>
+                <li class="feature-item label">Performance Reports</li>
+                <li class="feature-item label">Strategy Sessions</li>
+                <li class="feature-item label">Add-ons Available</li>
+                <li class="feature-item label">Ideal For</li>
+            </ul>
+        </div>
+
+        <!-- Launchpad Plan -->
+        <div class="column plan-column launchpad">
+            <div class="plan-header">
+                <div class="plan-name">Launchpad</div>
+                <div class="plan-price">₹15,000</div>
+                <button class="connect-btn">Let's Connect</button>
+            </div>
+            
+            <ul class="feature-list">
+                <li class="feature-item">2 (Instagram + Facebook)</li>
+                <li class="feature-item">12 branded posts/month</li>
+                <li class="feature-item dash">—</li>
+                <li class="feature-item">Monthly campaign calendar</li>
+                <li class="feature-item">Basic</li>
+                <li class="feature-item">Basic responses</li>
+                <li class="feature-item">Optional (₹5,000 add-on)</li>
+                <li class="feature-item">Monthly summary</li>
+                <li class="feature-item">1 per month</li>
+                <li class="feature-item">Extra platform, Ads setup</li>
+                <li class="feature-item">Bootstrapped Startups</li>
+            </ul>
+        </div>
+
+        <!-- Competitors Edge Plan -->
+        <div class="column plan-column competitors-edge">
+            <div class="plan-header">
+                <div class="plan-name">Competitors Edge</div>
+                <div class="plan-price">₹25,000</div>
+                <button class="connect-btn">Let's Connect</button>
+            </div>
+            
+            <ul class="feature-list">
+                <li class="feature-item">3 (e.g., IG, FB, LinkedIn)</li>
+                <li class="feature-item">20 custom posts/month</li>
+                <li class="feature-item">2 short-form videos/month</li>
+                <li class="feature-item">Bi-weekly campaign rollout</li>
+                <li class="feature-item">Competitor & audience research</li>
+                <li class="feature-item">Active comment/DM replies</li>
+                <li class="feature-item">Included (₹10K ad spend)</li>
+                <li class="feature-item">Monthly insights</li>
+                <li class="feature-item">2 per month</li>
+                <li class="feature-item">Influencer outreach</li>
+                <li class="feature-item">Growing SMBs / Funded Startups</li>
+            </ul>
+        </div>
+
+        <!-- Conversion Catalyst Plan -->
+        <div class="column plan-column conversion-catalyst">
+            <div class="plan-header">
+                <div class="plan-name">Conversion Catalyst</div>
+                <div class="plan-price">₹35,000</div>
+                <button class="connect-btn">Let's Connect</button>
+            </div>
+            
+            <ul class="feature-list">
+                <li class="feature-item">Up to 5 (IG, FB, LinkedIn, Twitter, YouTube)</li>
+                <li class="feature-item">30+ premium posts/month</li>
+                <li class="feature-item">4 short-form + 1 long-form/month</li>
+                <li class="feature-item">Weekly goal-driven campaigns</li>
+                <li class="feature-item">A/B testing + trend tracking</li>
+                <li class="feature-item">Full-scale engagement + sentiment analysis</li>
+                <li class="feature-item">Included (₹25K ad spend + A/B testing)</li>
+                <li class="feature-item">Weekly dashboard & KPI analysis</li>
+                <li class="feature-item">Weekly + Quarterly planning</li>
+                <li class="feature-item">Dedicated manager, Additional ad spend</li>
+                <li class="feature-item">ROI-focused, growth-stage brands</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
